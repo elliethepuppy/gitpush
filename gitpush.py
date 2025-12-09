@@ -19,7 +19,7 @@ def main(args) -> None:
         if len(args) == 2:
             raise Exception("Too few arguments for `gp add`\
             USAGE: `gp add [link to github repo]`\
-            EXAMPLE: `gp setup git@github.com:<username>/<repo>.git`")
+            EXAMPLE: `gp add git@github.com:<username>/<repo>.git`")
         elif "@" and ".git" not in args[2]:
             raise Exception(f"ERROR: {args[2]} is not a valid git repo")
         else:
